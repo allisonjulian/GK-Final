@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :products
+  resources :orders
+  devise_for :admins
+  devise_for :customers
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
